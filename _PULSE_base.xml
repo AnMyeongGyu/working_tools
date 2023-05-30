@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE MADYMO SYSTEM "mtd_3d.dtd">
+<MADYMO
+   RELEASE="R7.7"
+   DESCRIPTION="Template input file"
+   >
+   <TYPEDEFS>
+      <INCLUDE
+         FILE="typedefs.xml"
+      />
+   </TYPEDEFS>
+   <RUNID>
+<![CDATA[
+Insert the run-id here
+..
+..
+]]>
+   </RUNID>
+   <CONTROL_ALLOCATION/>
+   <CONTROL_ANALYSIS.TIME
+      TIME_END="0.1"
+      TIME_STEP="2.0E-05"
+      INT_MTH="EULER"
+   />
+   <CONTROL_OUTPUT>
+      <TIME_HISTORY_CONTACT
+         CONTACT_OUTPUT_LIST="ALL"
+      />
+      <TIME_HISTORY_ENERGY
+         ENERGY_OUTPUT_LIST="ALL"
+      />
+      <TIME_HISTORY_SYSTEM
+         SYSTEM_COG_OUTPUT_LIST="ALL"
+      />
+      <PRINT_MARKER
+         MARKER_OUTPUT_LIST="ALL"
+      />
+      <TIME_HISTORY_MB
+         BELT_OUTPUT_LIST="ALL"
+         BODY_OUTPUT_LIST="ALL"
+         BODY_REL_OUTPUT_LIST="ALL"
+         CONTROL_SYSTEM_OUTPUT_LIST="ALL"
+         JOINT_CONSTRAINT_OUTPUT_LIST="ALL"
+         JOINT_DOF_OUTPUT_LIST="ALL"
+         MUSCLE_OUTPUT_LIST="ALL"
+         RESTRAINT_OUTPUT_LIST="ALL"
+         SENSOR_OUTPUT_LIST="ALL"
+         SWITCH_OUTPUT_LIST="ALL"
+      />
+      <ANIMATION/>
+      <TIME_HISTORY_INJURY
+         INJURY_LIST="ALL"
+      />
+      <TIME_DURATION_INJURY
+         INJURY_LIST="ALL"
+      />
+   </CONTROL_OUTPUT>
+   <SYSTEM.MODEL
+      ID="1"
+      NAME="Crash_pulse_220919"
+      >
+<!--Vehicle_A
+
+-->
